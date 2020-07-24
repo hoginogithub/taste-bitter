@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>{%block title %}{% endblock %}</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+                       
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/one-page-wonder.min.css' %}" rel="stylesheet">
+
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <div id="wrapper">
+      {% block header %}{% endblock %}
+      {% block main %}{% endblock %}
+      <footer>
+        <a href="./">ポータルに戻る</a><br>
+        &copy; taste-bitter
+      </footer>
+    </div>
+  </body>
+</html>
