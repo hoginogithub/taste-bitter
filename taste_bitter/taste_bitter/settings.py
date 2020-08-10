@@ -130,7 +130,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-print('STATICFILES_DIR:' + STATICFILES_DIRS)
+print('STATICFILES_DIR:' + STATICFILES_DIRS[0])
 
 try:
     from .local_settings import *
