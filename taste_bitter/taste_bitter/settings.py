@@ -131,7 +131,7 @@ STATICFILES_DIRS = (
 )
 
 import os
-for root, dirs, files in os.walk(STATICFILES_DIRS[0]):
+for root, dirs, files in os.walk(BASE_DIR):
     print(f'root:{root}')
     print(f'dirs:{dirs}')
     print(f'files:{files}')
